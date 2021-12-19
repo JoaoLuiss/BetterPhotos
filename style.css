@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *,
 *::before,
 *::after {
@@ -26,6 +25,26 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.u-italic {
+  font-style: italic;
+}
+
+.u-accent {
+  color: #2cc695;
+}
+
+.u-underline {
+  text-decoration: underline;
+}
+
+.u-bold {
+  font-weight: 500;
+}
+
+.u-bolder {
+  font-weight: 700;
 }
 
 .page {
@@ -126,6 +145,78 @@ a {
   grid-row: 2/4;
 }
 
+.intro {
+  padding: 48px 35px 45px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.intro__text {
+  color: #eef3f4;
+  font-size: 16px;
+  margin-top: 12px;
+  line-height: 1.8;
+}
+
+.first-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 30px;
+}
+.social__img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.social__img:not(:first-child) {
+  margin-left: -8px;
+}
+.social__container {
+  margin-left: 10px;
+}
+.social__number {
+  font-weight: 500;
+}
+.social__text {
+  font-size: 12px;
+  color: #a9b4b7;
+  margin-top: -5px;
+}
+
+.auth__text {
+  color: #a9b4b7;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+.auth__link {
+  font-weight: 500;
+  color: #2cc695;
+}
+
+.btn {
+  background-color: #16b47f;
+  padding: 12px 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn:hover, .btn:focus {
+  background-color: #119267;
+}
+.btn__icon {
+  margin-left: 2px;
+}
+
 .gallery {
   background-color: #eef3f4;
   grid-column: 2/3;
@@ -137,177 +228,3 @@ a {
   grid-column: 2/3;
   grid-rows: 3/4;
 }
-=======
-/* RESET */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-input {
-    border: none;
-    font: inherit;
-}
-
-button {
-    border: none;
-    background-color: initial;
-    outline: none; /* the outline shows up when the element gets focused | don't forget to indicate the focus state later */
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* GLOBAL STYLE*/
-
-.page {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    background-image: 
-        url(https://bytegrad.com/course-assets/css/2/pattern.svg),
-        linear-gradient(to bottom right, #8fd681, #2cc695 90%) ;
-    scrollbar-width: none; /* only for Firefox and Microsoft Edge browsers*/
-}
-
-.page::-webkit-scrollbar { /* this is needed to style the scrollbar in chrome*/
-    display: none;
-}
-
-
-.app {
-    height: 1030px;
-    width: 1240px;
-    background-color: #fff;
-    box-shadow: 0 25px 150px rgba(0, 0, 0, 0.65);
-    margin: 80px 0;
-
-    display: grid;
-    grid-template-columns: 355px 1fr;
-    grid-template-rows: 65px 724px 1fr;
-}
-
-/* STYLES */
-.header {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    margin-left: 26px;
-    margin-right: 48px;
-}
-
-.search {
-    position: relative;
-}
-
-.search__input {
-    background-color: #eef3f4;
-    height: 34px;
-    width: 405px;
-    border-radius: 500px;
-    font-size: 13px;
-    color: #555a5b;
-    padding-left: 20px;
-    outline: none;
-    transition: all .2s;
-}
-
-.search__input:focus {
-    width: 425px;
-}
-
-.search__input::placeholder {
-    color: #a9b4b7;
-}
-
-.search__submit {
-    font-size: 15px;
-    color: #a9b4b7;
-    cursor: pointer;
-    transition: all .2s;
-    position: absolute;
-    right: 13px;
-    top: 8px;
-
-}
-
-.search__submit:focus {
-    color: #555a5b;
-
-}
-
-.serach__icon {
-
-}
-
-.nav {
-    margin-left: auto;
-}
-
-.nav__list {
-    display: flex;
-}
-
-.nav__item {
-
-
-}
-
-.nav__link {
-    padding: 0 20px;
-    height: 65px;
-    transition: all .4s;
-    display: block;
-    line-height: 65px; /* line-height serves to center simple things some times */
-}
-
-.nav__link:hover,
-.nav__link:focus {
-    background-color: #eef3f4;
-}
-
-.nav__icon {
-    color: #a9b4b7;
-    font-size: 22px;
-}
-
- 
-
-/* SIDEBAR */
-.sidebar {
-    background-color: #11271f;
-
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-}
-
-.gallery {
-    background-color: #eef3f4;
-
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.steps {
-    background-color: #e7edee;
-
-    grid-column: 2 / 3;
-    grid-rows: 3 / 4;
-}
->>>>>>> ff834b15a94adb78c43e47791a9cae7f1fe9e3b0
