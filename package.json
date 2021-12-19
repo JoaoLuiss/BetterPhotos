@@ -1,0 +1,22 @@
+{
+  "name": "betterphotos",
+  "version": "1.0.0",
+  "description": "Second project following the steps of **ByteGrad course for CSS**.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoLuiss/BetterPhotos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoLuiss/BetterPhotos/issues"
+  },
+  "homepage": "https://github.com/JoaoLuiss/BetterPhotos#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}
